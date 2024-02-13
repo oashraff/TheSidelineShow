@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>TheSidelineShow</title>
+    <link rel="stylesheet" href="contact.css">
+  </head>
+  <body>
+    <div class="banner">
+    <div class="navbar">
+        <img src="/Users/omarashraf/Desktop/Normal_Downloads/IMG_1094-modified.png" class="logo" onclick="window.location.href='info.html'">
+        <ul>
+          <li><a href="info.html">Home</a> <span onclick="transitionToPage('info.html')"></span></li>
+          <li><a href="about.html">About Us</a> <span onclick="transitionToPage('about.html')"></span</li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <main>
+		<h1>Contact Us</h1>
+		<p>Have a question or comment about The Sideline Show? Fill out the form below and we'll get back to you as soon as possible.</p>
+		
+		<form
+			action="https://formspree.io/f/moqzroog"
+			method="POST"
+			>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="subject">Subject:</label>
+			<input type="text" id="subject" name="subject" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<!-- your other form fields go here -->
+			<button type="submit" id="submit-btn"><span></span>Send</button>
+		</form>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 The Sideline Show</p>
+	</footer>
+
+	
+</body>
+</html>

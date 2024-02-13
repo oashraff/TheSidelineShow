@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+} 
+.logo{
+    width: 110px;
+    cursor: pointer;
+
+}
+.banner{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 1, 0.75), rgba(0, 186, 237, 1));
+    background-position: center;
+} 
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #00baed;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+    color: white;
+}
+
+h1 {
+	font-size: 36px;
+    font-weight: 600;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+textarea {
+	height: 150px;
+}
+
+button[type = "submit"]{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+button[type = "submit"]:hover span{
+    width: 100%;
+
+}
+button[type = "submit"]:hover{
+    border: none;
+    color: white;
+}
+
+
+footer {
+	background-color: #ccc;
+	padding: 10px;
+	text-align: center;
+}
